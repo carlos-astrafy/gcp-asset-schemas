@@ -1,0 +1,1198 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "createTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "updateTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "labels",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "state",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "role",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "host",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "port",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "username",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "password",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "passwordSet",
+                "type": "BOOLEAN"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "type",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientKey",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "caCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "sslFlags",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "ssl",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "cloudSqlId",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "mysql",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "host",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "port",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "username",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "password",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "database",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "passwordSet",
+                "type": "BOOLEAN"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "type",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientKey",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "caCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "sslFlags",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "ssl",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "cloudSqlId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "alloydbClusterId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "networkArchitecture",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "_present",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "staticIpConnectivity",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "serviceAttachment",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "privateServiceConnectConnectivity",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "postgresql",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "host",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "port",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "username",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "password",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "passwordSet",
+                "type": "BOOLEAN"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "type",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientKey",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "caCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "sslFlags",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "ssl",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "cloudSqlId",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "gcsBucket",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "gcsPrefix",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "backups",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "database",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "_present",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "staticIpConnectivity",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "hostname",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "username",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "port",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "password",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "privateKey",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "forwardSshConnectivity",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "privateConnection",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "privateConnectivity",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "serviceAttachment",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "privateServiceConnectConnectivity",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "sqlserver",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "host",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "port",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "username",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "password",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "passwordSet",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "databaseService",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "type",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientKey",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "caCertificate",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "sslFlags",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "ssl",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "_present",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "staticServiceIpConnectivity",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "hostname",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "username",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "port",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "password",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "privateKey",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "forwardSshConnectivity",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "privateConnection",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "privateConnectivity",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "hostname",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "port",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "username",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "password",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "passwordSet",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "asmService",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "type",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "clientKey",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "clientCertificate",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "caCertificate",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "key",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "value",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "sslFlags",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "ssl",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "oracleAsmConfig",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "oracle",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "cloudSqlId",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "databaseVersion",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "databaseVersionName",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "userLabels",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "tier",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "storageAutoResizeLimit",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "activationPolicy",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "value",
+                            "type": "BOOLEAN"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "enableIpv4",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "privateNetwork",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "allocatedIpRange",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "value",
+                            "type": "BOOLEAN"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "requireSsl",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "value",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "expireTime",
+                            "type": "TIMESTAMP"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "ttl",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "label",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "authorizedNetworks",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "ipConfig",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "autoStorageIncrease",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "databaseFlags",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "dataDiskType",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "dataDiskSizeGb",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "zone",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "secondaryZone",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "sourceId",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "rootPassword",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "rootPasswordSet",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "collation",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "cmekKeyName",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "availabilityType",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "edition",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "dataCacheEnabled",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "dataCacheConfig",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "dataDiskProvisionedIops",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "dataDiskProvisionedThroughput",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "settings",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "privateIp",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "publicIp",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "additionalPublicIp",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "cloudsql",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "clusterId",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "user",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "password",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "passwordSet",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "initialUser",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "vpcNetwork",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "labels",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "id",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "cpuCount",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "machineType",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "machineConfig",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "key",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "value",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "databaseFlags",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "key",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "value",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "labels",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "privateIp",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "fields": [
+                              {
+                                "mode": "NULLABLE",
+                                "name": "cidrRange",
+                                "type": "STRING"
+                              }
+                            ],
+                            "mode": "REPEATED",
+                            "name": "authorizedExternalNetworks",
+                            "type": "RECORD"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "enablePublicIp",
+                            "type": "BOOLEAN"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "enableOutboundPublicIp",
+                            "type": "BOOLEAN"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "instanceNetworkConfig",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "outboundPublicIpAddresses",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "primaryInstanceSettings",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "kmsKeyName",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "encryptionConfig",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "databaseVersion",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "settings",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "alloydb",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "code",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "message",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "typeUrl",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "details",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "error",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "provider",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzs",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzi",
+            "type": "BOOLEAN"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

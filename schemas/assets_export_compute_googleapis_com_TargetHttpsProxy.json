@@ -1,0 +1,166 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "creationTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLink",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "urlMap",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "sslCertificates",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "certificateMap",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "quicOverride",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sslPolicy",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "region",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "proxyBind",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "serverTlsPolicy",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "authentication",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "authorizationPolicy",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "authorization",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fingerprint",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "httpKeepAliveTimeoutSec",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "tlsEarlyData",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

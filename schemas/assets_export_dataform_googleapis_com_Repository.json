@@ -1,0 +1,201 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "createTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "url",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "defaultBranch",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "authenticationTokenSecretVersion",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "userPrivateKeySecretVersion",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "hostPublicKey",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "sshAuthenticationConfig",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "tokenStatus",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "gitRemoteSettings",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "npmrcEnvironmentVariablesSecretVersion",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "defaultDatabase",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "schemaSuffix",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "tablePrefix",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "workspaceCompilationOverrides",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "labels",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "setAuthenticatedUserAdmin",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "serviceAccount",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "kmsKeyName",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyVersionName",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "dataEncryptionState",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "internalMetadata",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

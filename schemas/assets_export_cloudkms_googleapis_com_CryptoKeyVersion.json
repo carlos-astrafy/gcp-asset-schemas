@@ -1,0 +1,192 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "state",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "protectionLevel",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "algorithm",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "format",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "content",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "caviumCerts",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "googleCardCerts",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "googlePartitionCerts",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "certChains",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "attestation",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "createTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "generateTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "destroyTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "destroyEventTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "importJob",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "importTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "importFailureReason",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "generationFailureReason",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "externalDestructionFailureReason",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "externalKeyUri",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "ekmConnectionKeyPath",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "externalProtectionLevelOptions",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "reimportEligible",
+            "type": "BOOLEAN"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

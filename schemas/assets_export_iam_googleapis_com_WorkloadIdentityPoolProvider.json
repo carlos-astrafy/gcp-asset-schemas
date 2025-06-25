@@ -1,0 +1,207 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "state",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "disabled",
+            "type": "BOOLEAN"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "attributeMapping",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "attributeCondition",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "accountId",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "stsUri",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "aws",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "issuerUri",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "allowedAudiences",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "jwksJson",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "oidc",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "idpMetadataXml",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "saml",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "pemCertificate",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "trustAnchors",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "pemCertificate",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "intermediateCas",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "trustStore",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "x509",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "expireTime",
+            "type": "TIMESTAMP"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

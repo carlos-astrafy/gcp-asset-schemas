@@ -1,0 +1,327 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "apiVersion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "generateName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "namespace",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "selfLink",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "uid",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "resourceVersion",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "generation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "creationTimestamp",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "createTime",
+                "type": "TIMESTAMP"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "labels",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "annotations",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "apiVersion",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "kind",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "uid",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "controller",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "blockOwnerDeletion",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "ownerReferences",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "deletionTimestamp",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "deleteTime",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "deletionGracePeriodSeconds",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "finalizers",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "clusterName",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "metadata",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "routeName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "certificateMode",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "forceOverride",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "spec",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "type",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "status",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "reason",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "message",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "lastTransitionTime",
+                    "type": "TIMESTAMP"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "severity",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "conditions",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "observedGeneration",
+                "type": "INTEGER"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "rrdata",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "type",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "resourceRecords",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "mappedRouteName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "url",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "status",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

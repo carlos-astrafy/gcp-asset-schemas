@@ -1,0 +1,183 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "creationTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "address",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "prefixLength",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "status",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "region",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLink",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "users",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "user",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "networkTier",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "labels",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "labelFingerprint",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "ipVersion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "addressType",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "purpose",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "subnetwork",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "network",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "ipv6EndpointType",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

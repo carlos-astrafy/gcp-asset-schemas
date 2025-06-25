@@ -1,0 +1,147 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cloudProvider",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "assetNames",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "assetTypes",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "contentType",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "topic",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "pubsubDestination",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "feedOutputConfig",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "expression",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "title",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "description",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "location",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "condition",
+            "type": "RECORD"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "relationshipTypes",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "enrichmentTypes",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

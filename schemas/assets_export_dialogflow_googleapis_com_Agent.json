@@ -1,0 +1,430 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "defaultLanguageCode",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "supportedLanguageCodes",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "timeZone",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "avatarUri",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "enableSpeechAdaptation",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "speechToTextSettings",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "startFlow",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "startPlaybook",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "securitySettings",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "enableStackdriverLogging",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "enableSpellCorrection",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "enableMultiLanguageTraining",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "locked",
+            "type": "BOOLEAN"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "uri",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "audioExportGcsDestination",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "endpointerSensitivity",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "noSpeechTimeout",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "useTimeoutBasedEndpointing",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "models",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "speechSettings",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enabled",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "maxDigits",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "finishDigit",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "interdigitTimeoutDuration",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "endpointingTimeoutDuration",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "dtmfSettings",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enableStackdriverLogging",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enableInteractionLogging",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enableConsentBasedRedaction",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "loggingSettings",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "advancedSettings",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "displayName",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "repositoryUri",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "trackingBranch",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "accessToken",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "branches",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "githubSettings",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "gitIntegrationSettings",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "speakingRate",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "pitch",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "volumeGainDb",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "effectsProfileId",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "name",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "ssmlGender",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "voice",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "synthesizeSpeechConfigs",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "textToSpeechSettings",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "engine",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "genAppBuilderSettings",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "enableAnswerFeedback",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "answerFeedbackSettings",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "defaultEndUserMetadata",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "personalizationSettings",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "sslCertificate",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "privateKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "passphrase",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "clientCertificateSettings",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzs",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzi",
+            "type": "BOOLEAN"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

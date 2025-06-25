@@ -1,0 +1,416 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "labels",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "REPEATED",
+                "name": "allowedPersistenceRegions",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "enforceInTransit",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "messageStoragePolicy",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "kmsKeyName",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "schema",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "encoding",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "firstRevisionId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "lastRevisionId",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "schemaSettings",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzs",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "messageRetentionDuration",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "state",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "streamArn",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "consumerArn",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "awsRoleArn",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "gcpServiceAccount",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "awsKinesis",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "bucket",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "delimiter",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "textFormat",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "_present",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "avroFormat",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "_present",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "pubsubAvroFormat",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "minimumObjectCreateTime",
+                    "type": "TIMESTAMP"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "matchGlob",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "cloudStorage",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "resourceGroup",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "namespace",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "eventHub",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clientId",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "tenantId",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "subscriptionId",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "gcpServiceAccount",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "azureEventHubs",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clusterArn",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "topic",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "awsRoleArn",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "gcpServiceAccount",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "awsMsk",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "bootstrapServer",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "clusterId",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "topic",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "identityPoolId",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "gcpServiceAccount",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "confluentCloud",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "severity",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "platformLogsSettings",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "ingestionDataSourceSettings",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "functionName",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "code",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "javascriptUdf",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "enabled",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "disabled",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "messageTransforms",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

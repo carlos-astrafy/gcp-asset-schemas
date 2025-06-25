@@ -1,0 +1,599 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "ttl",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "rrdata",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "signatureRrdata",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "location",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "rrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "signatureRrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "fields": [
+                              {
+                                "mode": "NULLABLE",
+                                "name": "loadBalancerType",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipAddress",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "port",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipProtocol",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "networkUrl",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "project",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "region",
+                                "type": "STRING"
+                              }
+                            ],
+                            "mode": "REPEATED",
+                            "name": "internalLoadBalancer",
+                            "type": "RECORD"
+                          },
+                          {
+                            "mode": "REPEATED",
+                            "name": "externalEndpoints",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "healthCheckedTargets",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "item",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enableFencing",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "geoPolicy",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "weight",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "rrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "signatureRrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "fields": [
+                              {
+                                "mode": "NULLABLE",
+                                "name": "loadBalancerType",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipAddress",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "port",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipProtocol",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "networkUrl",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "project",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "region",
+                                "type": "STRING"
+                              }
+                            ],
+                            "mode": "REPEATED",
+                            "name": "internalLoadBalancer",
+                            "type": "RECORD"
+                          },
+                          {
+                            "mode": "REPEATED",
+                            "name": "externalEndpoints",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "healthCheckedTargets",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "item",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "wrrPolicy",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "location",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "rrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "signatureRrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "fields": [
+                              {
+                                "mode": "NULLABLE",
+                                "name": "loadBalancerType",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipAddress",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "port",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipProtocol",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "networkUrl",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "project",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "region",
+                                "type": "STRING"
+                              }
+                            ],
+                            "mode": "REPEATED",
+                            "name": "internalLoadBalancer",
+                            "type": "RECORD"
+                          },
+                          {
+                            "mode": "REPEATED",
+                            "name": "externalEndpoints",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "healthCheckedTargets",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "item",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enableFencing",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "geo",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "weight",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "rrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "signatureRrdata",
+                        "type": "STRING"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "fields": [
+                              {
+                                "mode": "NULLABLE",
+                                "name": "loadBalancerType",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipAddress",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "port",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "ipProtocol",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "networkUrl",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "project",
+                                "type": "STRING"
+                              },
+                              {
+                                "mode": "NULLABLE",
+                                "name": "region",
+                                "type": "STRING"
+                              }
+                            ],
+                            "mode": "REPEATED",
+                            "name": "internalLoadBalancer",
+                            "type": "RECORD"
+                          },
+                          {
+                            "mode": "REPEATED",
+                            "name": "externalEndpoints",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "healthCheckedTargets",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "item",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "wrr",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "loadBalancerType",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "ipAddress",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "port",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "ipProtocol",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "networkUrl",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "project",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "region",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "internalLoadBalancer",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "externalEndpoints",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "primaryTargets",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "location",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "REPEATED",
+                            "name": "rrdata",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "REPEATED",
+                            "name": "signatureRrdata",
+                            "type": "STRING"
+                          },
+                          {
+                            "fields": [
+                              {
+                                "fields": [
+                                  {
+                                    "mode": "NULLABLE",
+                                    "name": "loadBalancerType",
+                                    "type": "STRING"
+                                  },
+                                  {
+                                    "mode": "NULLABLE",
+                                    "name": "ipAddress",
+                                    "type": "STRING"
+                                  },
+                                  {
+                                    "mode": "NULLABLE",
+                                    "name": "port",
+                                    "type": "STRING"
+                                  },
+                                  {
+                                    "mode": "NULLABLE",
+                                    "name": "ipProtocol",
+                                    "type": "STRING"
+                                  },
+                                  {
+                                    "mode": "NULLABLE",
+                                    "name": "networkUrl",
+                                    "type": "STRING"
+                                  },
+                                  {
+                                    "mode": "NULLABLE",
+                                    "name": "project",
+                                    "type": "STRING"
+                                  },
+                                  {
+                                    "mode": "NULLABLE",
+                                    "name": "region",
+                                    "type": "STRING"
+                                  }
+                                ],
+                                "mode": "REPEATED",
+                                "name": "internalLoadBalancer",
+                                "type": "RECORD"
+                              },
+                              {
+                                "mode": "REPEATED",
+                                "name": "externalEndpoints",
+                                "type": "STRING"
+                              }
+                            ],
+                            "mode": "NULLABLE",
+                            "name": "healthCheckedTargets",
+                            "type": "RECORD"
+                          }
+                        ],
+                        "mode": "REPEATED",
+                        "name": "item",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "enableFencing",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "backupGeoTargets",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "trickleTraffic",
+                    "type": "FLOAT"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "primaryBackup",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "healthCheck",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "routingPolicy",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

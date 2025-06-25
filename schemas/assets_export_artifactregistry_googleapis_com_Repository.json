@@ -1,0 +1,537 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "allowSnapshotOverwrites",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "versionPolicy",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "mavenConfig",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "immutableTags",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "dockerConfig",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "id",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "repository",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "priority",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "upstreamPolicies",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "virtualRepositoryConfig",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "publicRepository",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "uri",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "customRepository",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "dockerRepository",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "publicRepository",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "uri",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "customRepository",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "mavenRepository",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "publicRepository",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "uri",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "customRepository",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "npmRepository",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "publicRepository",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "uri",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "customRepository",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "pythonRepository",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "repositoryBase",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "repositoryPath",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "publicRepository",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "uri",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "customRepository",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "aptRepository",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "repositoryBase",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "repositoryPath",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "publicRepository",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "uri",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "customRepository",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "yumRepository",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "uri",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "commonRepository",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "description",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "username",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "passwordSecretVersion",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "usernamePasswordCredentials",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "upstreamCredentials",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "disableUpstreamValidation",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "remoteRepositoryConfig",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "format",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "labels",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "createTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "updateTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "kmsKeyName",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "mode",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "tagState",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "tagPrefixes",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "versionNamePrefixes",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "packageNamePrefixes",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "olderThan",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "newerThan",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "condition",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "REPEATED",
+                        "name": "packageNamePrefixes",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "keepCount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "mostRecentVersions",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "id",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "action",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "cleanupPolicies",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sizeBytes",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzs",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cleanupPolicyDryRun",
+            "type": "BOOLEAN"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "enablementConfig",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "lastEnableTime",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "enablementState",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "enablementStateReason",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "vulnerabilityScanningConfig",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "disallowUnspecifiedMode",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzi",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "registryUri",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

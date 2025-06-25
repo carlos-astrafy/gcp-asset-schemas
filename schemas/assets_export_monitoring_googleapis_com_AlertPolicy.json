@@ -1,0 +1,702 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "content",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "mimeType",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "subject",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "displayName",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "url",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "links",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "documentation",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "userLabels",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "displayName",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "filter",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "alignmentPeriod",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "perSeriesAligner",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "crossSeriesReducer",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "groupByFields",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "aggregations",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "denominatorFilter",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "alignmentPeriod",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "perSeriesAligner",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "crossSeriesReducer",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "groupByFields",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "denominatorAggregations",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "forecastHorizon",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "forecastOptions",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "comparison",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "thresholdValue",
+                    "type": "FLOAT"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "duration",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "count",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "percent",
+                        "type": "FLOAT"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "trigger",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "evaluationMissingData",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "conditionThreshold",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "filter",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "alignmentPeriod",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "perSeriesAligner",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "crossSeriesReducer",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "groupByFields",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "aggregations",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "duration",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "count",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "percent",
+                        "type": "FLOAT"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "trigger",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "conditionAbsent",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "filter",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "labelExtractors",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "conditionMatchedLog",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "query",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "duration",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "count",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "percent",
+                        "type": "FLOAT"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "trigger",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "evaluationMissingData",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "conditionMonitoringQueryLanguage",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "query",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "duration",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "evaluationInterval",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "labels",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "ruleGroup",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "alertRule",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "disableMetricValidation",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "conditionPrometheusQueryLanguage",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "query",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "periodicity",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "minutes",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "periodicity",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "minuteOffset",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "hourly",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "periodicity",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "hours",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "minutes",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "seconds",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "nanos",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "executionTime",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "daily",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "comparison",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "threshold",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "rowCountTest",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "column",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "booleanTest",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "conditionSql",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "conditions",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "combiner",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "enabled",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "code",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "message",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "typeUrl",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "details",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "validity",
+            "type": "RECORD"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "notificationChannels",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "mutateTime",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "mutatedBy",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "creationRecord",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "mutateTime",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "mutatedBy",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "mutationRecord",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "period",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "notificationRateLimit",
+                "type": "RECORD"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "notificationPrompts",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "autoClose",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "notificationChannelNames",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "renotifyInterval",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "notificationChannelStrategy",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "alertStrategy",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "severity",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]
