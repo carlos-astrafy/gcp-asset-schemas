@@ -1,0 +1,808 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLink",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "projectNumber",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "timeCreated",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "updated",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "softDeleteTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "hardDeleteTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "generation",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "metageneration",
+            "type": "INTEGER"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "kind",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "selfLink",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "bucket",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "object",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "generation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "entity",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "role",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "email",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "entityId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "domain",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "projectNumber",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "team",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "projectTeam",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "etag",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "acl",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "kind",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "selfLink",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "bucket",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "object",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "generation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "entity",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "role",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "email",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "entityId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "domain",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "projectNumber",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "team",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "projectTeam",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "etag",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "defaultObjectAcl",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "defaultKmsKeyName",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "restricted",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "effectiveTime",
+                    "type": "TIMESTAMP"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "googleManagedEncryptionEnforcementConfig",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "restricted",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "effectiveTime",
+                    "type": "TIMESTAMP"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "customerManagedEncryptionEnforcementConfig",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "restricted",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "effectiveTime",
+                    "type": "TIMESTAMP"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "customerSuppliedEncryptionEnforcementConfig",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "encryption",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "entity",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "entityId",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "owner",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "location",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPZS",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPZI",
+            "type": "BOOLEAN"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "mainPageSuffix",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "notFoundPage",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "website",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "logBucket",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "logObjectPrefix",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "logging",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "enabled",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "versioning",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "REPEATED",
+                "name": "origin",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "method",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "responseHeader",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "maxAgeSeconds",
+                "type": "INTEGER"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "cors",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "type",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "storageClass",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "action",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "age",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "createdBefore",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "isLive",
+                        "type": "BOOLEAN"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "matchesStorageClass",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "numNewerVersions",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "matchesPattern",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "daysSinceCustomTime",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "customTimeBefore",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "daysSinceNoncurrentTime",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "noncurrentTimeBefore",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "matchesPrefix",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "matchesSuffix",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "condition",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "rule",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "lifecycle",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "labels",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "retentionPeriod",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "effectiveTime",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "isLocked",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "retentionPolicy",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "mode",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "objectRetention",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "retentionDurationSeconds",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "effectiveTime",
+                "type": "TIMESTAMP"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "softDeletePolicy",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "defaultEventBasedHold",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "storageClass",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "requesterPays",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "billing",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "etag",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enabled",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "lockedTime",
+                    "type": "TIMESTAMP"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "bucketPolicyOnly",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "enabled",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "lockedTime",
+                    "type": "TIMESTAMP"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "uniformBucketLevelAccess",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "publicAccessPrevention",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "iamConfiguration",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "locationType",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "REPEATED",
+                "name": "dataLocations",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "customPlacementConfig",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "rpo",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "enabled",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "toggleTime",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "terminalStorageClass",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "terminalStorageClassUpdateTime",
+                "type": "TIMESTAMP"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "autoclass",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "enabled",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "hierarchicalNamespace",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "mode",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "allowedIpCidrRanges",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "publicNetworkSource",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "network",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "allowedIpCidrRanges",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "vpcNetworkSources",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "allowCrossOrgVpcs",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "allowAllServiceAgentAccess",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "ipFilter",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]
