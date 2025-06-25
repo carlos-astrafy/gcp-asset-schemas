@@ -1,0 +1,160 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "createTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "updateTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "retentionDays",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "locked",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "lifecycleState",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "analyticsEnabled",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "restrictedFields",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "fieldPath",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "type",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "createTime",
+                "type": "TIMESTAMP"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "indexConfigs",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyVersionName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "serviceAccountId",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "cmekSettings",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

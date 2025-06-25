@@ -1,0 +1,387 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "creationTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "kind",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "ruleName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "description",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "priority",
+                "type": "INTEGER"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "REPEATED",
+                    "name": "srcIpRanges",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "destIpRanges",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "ipProtocol",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "REPEATED",
+                        "name": "ports",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "layer4Configs",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "name",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "state",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "srcSecureTags",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "name",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "state",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "srcSecureTag",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "destAddressGroups",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "srcAddressGroups",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "srcFqdns",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "destFqdns",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "srcRegionCodes",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "destRegionCodes",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "destThreatIntelligences",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "REPEATED",
+                    "name": "srcThreatIntelligences",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "srcNetworkType",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "destNetworkType",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "match",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "action",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "securityProfileGroup",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "tlsInspect",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "direction",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "targetResources",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "enableLogging",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "ruleTupleCount",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "targetServiceAccounts",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "targetSecureTags",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "targetSecureTag",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "disabled",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "rules",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "fingerprint",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLink",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLinkWithId",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "attachmentTarget",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "firewallPolicyId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "shortName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "displayName",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "associations",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "ruleTupleCount",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "shortName",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "parent",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "region",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "creationTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLink",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "certificate",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "privateKey",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "REPEATED",
+                "name": "domains",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "status",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "domainStatus",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "managed",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "certificate",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "privateKey",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "selfManaged",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "subjectAlternativeNames",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "expireTime",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "region",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

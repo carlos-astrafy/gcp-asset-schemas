@@ -1,0 +1,505 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "creationTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sizeGb",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "zone",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "status",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceSnapshot",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceSnapshotId",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceStorageObject",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "options",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLink",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceImage",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceImageId",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "licenses",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "type",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "guestOsFeatures",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "lastAttachTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "lastDetachTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "users",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "rawKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "rsaEncryptedKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "sha256",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyServiceAccount",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "diskEncryptionKey",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "rawKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "rsaEncryptedKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "sha256",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyServiceAccount",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "sourceImageEncryptionKey",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "rawKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "rsaEncryptedKey",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "sha256",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyServiceAccount",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "sourceSnapshotEncryptionKey",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "labels",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "labelFingerprint",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "region",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "replicaZones",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "licenseCodes",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "physicalBlockSizeBytes",
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "resourcePolicies",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceDisk",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceDiskId",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "provisionedIops",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "provisionedThroughput",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "enableConfidentialCompute",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceInstantSnapshot",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceInstantSnapshotId",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzs",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "satisfiesPzi",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "locationHint",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "storagePool",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "accessMode",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "disk",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "diskId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "consistencyGroupPolicy",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "consistencyGroupPolicyId",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "asyncPrimaryDisk",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "disk",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "disk",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "diskId",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "consistencyGroupPolicy",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "consistencyGroupPolicyId",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "asyncReplicationDisk",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "asyncSecondaryDisks",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "state",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "asyncPrimaryDisk",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "state",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "asyncSecondaryDisks",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "resourceStatus",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceConsistencyGroupPolicy",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sourceConsistencyGroupPolicyId",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "architecture",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

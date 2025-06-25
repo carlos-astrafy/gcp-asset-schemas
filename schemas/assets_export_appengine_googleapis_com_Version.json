@@ -1,0 +1,983 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "coolDownPeriod",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "aggregationWindowLength",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetUtilization",
+                    "type": "FLOAT"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "cpuUtilization",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "maxConcurrentRequests",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "maxIdleInstances",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "maxTotalInstances",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "maxPendingLatency",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "minIdleInstances",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "minTotalInstances",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "minPendingLatency",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetRequestCountPerSecond",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetConcurrentRequests",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "requestUtilization",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetWriteBytesPerSecond",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetWriteOpsPerSecond",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetReadBytesPerSecond",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetReadOpsPerSecond",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "diskUtilization",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetSentBytesPerSecond",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetSentPacketsPerSecond",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetReceivedBytesPerSecond",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetReceivedPacketsPerSecond",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "networkUtilization",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetCpuUtilization",
+                    "type": "FLOAT"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "targetThroughputUtilization",
+                    "type": "FLOAT"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "minInstances",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "maxInstances",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "standardSchedulerSettings",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "automaticScaling",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "idleTimeout",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "maxInstances",
+                "type": "INTEGER"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "basicScaling",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "instances",
+                "type": "INTEGER"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "manualScaling",
+            "type": "RECORD"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "inboundServices",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "instanceClass",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "REPEATED",
+                "name": "forwardedPorts",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "instanceTag",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "subnetworkName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "sessionAffinity",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "instanceIpMode",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "network",
+            "type": "RECORD"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "zones",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "cpu",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "diskGb",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "memoryGb",
+                "type": "FLOAT"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "volumeType",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "sizeGb",
+                    "type": "FLOAT"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "volumes",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "kmsKeyReference",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "resources",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "runtime",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "runtimeChannel",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "threadsafe",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "vm",
+            "type": "BOOLEAN"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "operatingSystem",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "runtimeVersion",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "flexibleRuntimeSettings",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "appEngineApis",
+            "type": "BOOLEAN"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "betaSettings",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "env",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "servingStatus",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "createdBy",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "createTime",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "diskUsageBytes",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "runtimeApiVersion",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "runtimeMainExecutablePath",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "serviceAccount",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "urlRegex",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "path",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "uploadPathRegex",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "key",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "value",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "httpHeaders",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "mimeType",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "expiration",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "requireMatchingFile",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "applicationReadable",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "staticFiles",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "scriptPath",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "script",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "scriptPath",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "apiEndpoint",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "securityLevel",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "login",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "authFailAction",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "redirectHttpResponseCode",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "handlers",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "errorCode",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "staticFile",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "mimeType",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "errorHandlers",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "version",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "libraries",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "authFailAction",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "login",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "script",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "securityLevel",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "url",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "apiConfig",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "envVariables",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "buildEnvVariables",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "defaultExpiration",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "disableHealthCheck",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "host",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "healthyThreshold",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "unhealthyThreshold",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "restartThreshold",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "checkInterval",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "timeout",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "healthCheck",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "path",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "host",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "failureThreshold",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "successThreshold",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "checkInterval",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "timeout",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "appStartTimeout",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "readinessCheck",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "path",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "host",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "failureThreshold",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "successThreshold",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "checkInterval",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "timeout",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "initialDelay",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "livenessCheck",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "nobuildFilesRegex",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "sourceUrl",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "sha1Sum",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "mimeType",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "files",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "image",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "container",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "sourceUrl",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "filesCount",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "zip",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "appYamlPath",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "cloudBuildTimeout",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "cloudBuildOptions",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "deployment",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "versionUrl",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "configId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "rolloutStrategy",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "disableTraceSampling",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "endpointsApiService",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "shell",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "entrypoint",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "egressSetting",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "vpcAccessConnector",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "typeUrl",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "generatedCustomerMetadata",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

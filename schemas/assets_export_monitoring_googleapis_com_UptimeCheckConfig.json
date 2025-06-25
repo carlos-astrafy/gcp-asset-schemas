@@ -1,0 +1,396 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "displayName",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "monitoredResource",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "groupId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "resourceType",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "resourceGroup",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "cloudRunRevision",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "cloudFunctionV2",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "syntheticMonitor",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "requestMethod",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "useSsl",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "path",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "port",
+                "type": "INTEGER"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "username",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "password",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "authInfo",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "maskHeaders",
+                "type": "BOOLEAN"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "headers",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "contentType",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "customContentType",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "validateSsl",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "body",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "statusValue",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "statusClass",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "acceptedResponseStatusCodes",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "pingsCount",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "pingConfig",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "type",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "serviceAgentAuthentication",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "httpCheck",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "port",
+                "type": "INTEGER"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "pingsCount",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "pingConfig",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "tcpCheck",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "period",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "timeout",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "content",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "matcher",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "jsonPath",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "jsonMatcher",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "jsonPathMatcher",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "contentMatchers",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "checkerType",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "disabled",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "selectedRegions",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "logCheckFailures",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "isInternal",
+            "type": "BOOLEAN"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "displayName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "network",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "gcpZone",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "peerProjectId",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "state",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "internalCheckers",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "userLabels",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]

@@ -1,0 +1,204 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "name",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "assetType",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "version",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryDocumentUri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "discoveryName",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "resourceUrl",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "parent",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "kind",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "creationTimestamp",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "description",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "kind",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "fingerprint",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "key",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "items",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "commonInstanceMetadata",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "metric",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "limit",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "usage",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "owner",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "quotas",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "bucketName",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "reportNamePrefix",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "usageExportLocation",
+            "type": "RECORD"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "enabledFeatures",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "selfLink",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "defaultServiceAccount",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "xpnProjectStatus",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "defaultNetworkTier",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "vmDnsSetting",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "cloudArmorTier",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "location",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "resource",
+    "type": "RECORD"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "ancestors",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "updateTime",
+    "type": "TIMESTAMP"
+  }
+]
